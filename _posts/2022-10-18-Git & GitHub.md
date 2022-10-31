@@ -5,7 +5,7 @@ excerpt: "Git 설치 및 GitHub 이용방법"
 categories:
   - Git&GitHub
 tags:
-  - [Github, Git]
+  - [Git, GitHub]
 
 toc: true
 toc_sticky: true

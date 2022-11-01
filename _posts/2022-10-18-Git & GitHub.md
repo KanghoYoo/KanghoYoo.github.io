@@ -1,17 +1,8 @@
 ---
-title: "Git & GitHub"
-excerpt: "Git 설치 및 GitHub 이용방법"
-
-categories:
-  - Git&GitHub
-tags:
-  - [Git, GitHub]
-
-toc: true
-toc_sticky: true
-
-date: 2022-10-18
-last_modified_at: 2022-10-20
+title: Git 설치 & GitHub 이용방법
+date: 2022-10-18 +/-TTTT
+categories: [Git&GitHub]
+tags: [git, github] # TAG names should always be lowercase
 ---
 
 # Git & GitHub

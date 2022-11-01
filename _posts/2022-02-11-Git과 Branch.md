@@ -1,0 +1,119 @@
+---
+title: 깃헙(GitHub) 블로그 제작
+date: 2022-02-11 +/-TTTT
+categories: [Git&GitHub, Git]
+tags: [git] # TAG names should always be lowercase
+---
+
+# Git
+
+## Git
+
+- Git이란 분산 버전 관리 시스템으로 버전관리를 하여 변경사항을 추적할 수 있다
+
+### Git을 사용하는 이유
+
+1. 관리가 용이하다( 새파일이 필요가 없다 )
+2. 이전 버전 코드로 이동이 가능하다
+3. 이력을 남길 수 있다
+4. 하나의 프로젝트로 많은 개발자들이 이용할 수 있다.
+
+#### Repositories(저장소)
+
+저장소는 Local과 Remote가 존재한다.
+
+- Local repository: 본인의 컴퓨터에 저장된 프로젝트 저장소
+- Remote repository: 자신의 컴퓨터가 아닌 외부 버전의 프로젝트 저장소로, 팀프로젝트 할때 유용
+
+### Git 명령어
+
+1. Git 버전확인
+   `git ---version`
+2. 이름과 이메일 설정
+   `git config --global user.name "이름"`
+   `git config --global user.email "이메일"`
+3. Git 시작
+
+- 폴더로 경로를 이동하고 명령어 실행
+  `git init`
+
+4. status 확인
+
+- repository의 현재 상태를 확인하여 변경내역을 확인할 수 있는 명령어
+- Git으로 관리되고 있지 않던 파일이 있다면 해당파일을 staging area로 추가 가능
+  `git status`
+
+5. Staging area 파일 추가
+
+- 커밋을 남길 수 있게 해줌
+  `git add .` : 모든 파일 추가
+  `git add 파일명.파일형식` : 단일 파일 추가
+  `git add 파일명1.파일형식 파일명2.파일형식`: 복수의 파일 추가
+
+6. Commit 명령어
+
+- 중간포인트 생성(현재 상황을 나타내고 있는 체크포인트)
+- 커밋간 앞뒤로 이동이 가능
+  `git commit -m "커밋명"`
+  > 새 커밋을 남길려면 Staging area에 파일을 추가 한 뒤 다음 커밋을 남기는 프로세르를 반복해야함
+
+7. Commit 내역 확인
+   `git log` : 모든 커밋 내역 확인
+
+8. 특정 커밋 시점의 코드로 되돌리기
+   `git checkout <commit-hash>`
+
+   > commit-hash는 `git log`코드에서 보이는 실제 hash 값으로 입력
+
+9. Ignoring files
+
+- Staging area에 추가하고 싶지않거나, git에서 관리하지 않아도 되는 파일들을 `gitignore`파일을 프로젝트 폴더에 생성하면 됨
+  > `gitignore`파일안은 해당하는 파일명과 폴더명을 나열하면 됨
+
+```
+# 예시
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+node_modules
+bower_components
+```
+
+10. Creating a new branch
+
+- 새로운 브랜치 생성
+  `git branch <새로운 브랜치 이름>`
+- 새로 만들어진 브랜치는 현재 프로젝트의 코드를 그대로 반영하여 생성됨
+
+11. Changing branches
+
+- 브랜치 전환
+  `git checkout <전환할 브랜치 이름>`
+- 브랜치로 전환하면, 해당 브랜치 안에 있는 마지막 커밋 내용이 작업 트리에 펼쳐짐
+
+  -브랜치 생성 동시에 생성된 브랜치로 이동
+  `git checkout -b <새로운 브랜치 이름>`
+
+12. 프로젝트 브랜치 확인
+    `git branch`
+
+13. Merging branches
+
+- 브랜치 병합
+  `git merge <branch-name>`
+  5.4. Deleting a branch
+- 브랜치 삭제
+  `git branch -d <branch-name>`
+
+## Branch
+
+- **브랜치**: 독립적으로 어떤 작업을 진행하기 위한 개념입니다.
+  한 나무의 나뭇가지로 생각하면 되며, 원본으로 부터 복제하여 **독릭적으로 어떤 작업을 진행** 하기위한 것이다. 각각의 브랜치는 다른 브랜치의 영향을 받지 않아 여러작업을 동시에 진행할 수 있다.
+
+- 여러 명에서 동시에 작업할 경우, **메인 브랜치에 자신의 작업 전용 브랜치를 만들어** 다른사람의 작업에 영향을 주거나 받지 않게 한다. 작업이 끝난 후 메인 브랜치에 자신의 브랜치의 변경 사항을 적용하면 된다.
+
+- 처음으로 저장소를 만들면 Git은 바로 master라는 이름의 브랜치를 만드는데, 새로운 파일을 추가 한다거나 추가한 파일의 내용을 변경하여 Commit하는 것은 모두 master 라는 이름의 브랜치를 통해 처리할 수 있다.
+
+- 다른 새로운 브랜치를 만들어서 새로운 브랜치를 checkout 하지 않는 이상, 이 때의 모든 작업은 master 브랜치에서 이용된다.

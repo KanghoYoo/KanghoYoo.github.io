@@ -1,7 +1,7 @@
 ---
 title: Git 설치 & GitHub 이용방법
 date: 2022-10-18 +/-TTTT
-categories: [Git&GitHub]
+categories: [Git&GitHub, GitHub]
 tags: [git, github] # TAG names should always be lowercase
 ---
 

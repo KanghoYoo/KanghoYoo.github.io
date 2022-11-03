@@ -9,7 +9,7 @@ tags: [github-page] # TAG names should always be lowercase
 
 # GitHub Page에서 Fork한  Repository 잔디 심기
 
-## ❗️문제 상황
+### ❗️문제 상황
 
 - 블로그는 잘 작동이 되나, 지금까지 입력한 Commit 내역이 GitHub Page에 잔디밭이 적용 안됨
   - GitHub에 잔디 심는 기준

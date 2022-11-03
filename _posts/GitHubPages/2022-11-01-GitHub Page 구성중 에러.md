@@ -20,7 +20,7 @@ tags: [github-page] # TAG names should always be lowercase
 
 
 
-### 💡해결 방안
+### 💡 해결 방안
 
 - `---layout: home # Index page---` 구글링
 - GitHub Repository의 `setting` - `pages` - `Bulid and deployment`옵션의 `Sorce` 변경 -> `GitHub Actions` 사용

@@ -282,6 +282,42 @@ tags: [git, github] # TAG names should always be lowercase
 
 ---
 
+### 하던 작업 일시 중단 하기
+
+`git stash`
+
+> `git status -s`
+>
+> `git stash --keep-index`
+>
+> 이미 Staging Area에 들어 있는 파일을 Stash 하지 않는 명령어
+>
+> ---
+>
+> `git status -s`
+>
+> `git stash -u` / `git stash --include-untracked`
+>
+> 추적 중이지 않은 파일을 같이 저장하려면 Stash 명령을 사용할 때  
+>
+> ---
+>
+> `git stash --patch`
+>
+> 수정된 모든 사항을 저장하지 않는 명령어. 대신 대화형 프롬프트가 뜨며 변경된 데이터 중 저장할 것과 저장하지 않을 것을 지정할 수 있다.
+
+### 저장한 Stash보기
+
+`git stash list`
+
+### 저장했던 Stash 복원하기
+
+`git stash apply `
+
+`git stash apply --index`
+
+> Staged 상태였던 파일을 다시 Staged 상태로 적용시킴 
+
 ### Commit 메시지 여러 개 수정하기
 
 1. `git rebase -i HEAD~3`

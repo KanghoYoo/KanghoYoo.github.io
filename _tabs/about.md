@@ -4,5 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# About
+
+[![image-20221107172353563](../assets/img/postingImg/image-20221107172353563.png)] (https://kanghoyoo.notion.site/Kangho-Yoo-User-33b0c9f084ab4060b8b94a99af7446e5)
+

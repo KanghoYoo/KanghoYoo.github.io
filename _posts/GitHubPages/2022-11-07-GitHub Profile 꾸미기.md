@@ -25,7 +25,7 @@ tags: [github-page] # TAG names should always be lowercase
 
 - **capsule-render** 이용
 
-  - [capsule-render]: https://github.com/kyechan99/capsule-render
+  - [capsule-render]: https://github.com/kyechan99/capsule-render	"capsule-render"
 
   - 원하는 커스텀을 한 후, 코드 적용
 

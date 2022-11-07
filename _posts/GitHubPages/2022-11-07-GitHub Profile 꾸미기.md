@@ -25,19 +25,17 @@ tags: [github-page] # TAG names should always be lowercase
 
 - **capsule-render** 이용
 
-  - https://github.com/kyechan99/capsule-render
-
-  - [capsule-render]: https://github.com/kyechan99/capsule-render	"capsule-render"
+  - [**capsule-render**](https://github.com/kyechan99/capsule-render)
 
   - 원하는 커스텀을 한 후, 코드 적용
-  
+
   - ![image-20221107150925069](../../assets/img/postingImg/image-20221107150925069.png)
 
 #### 2-2. Hits
 
 - **hits.seeyoufarm** 이용
 
-  - [HITS]: https://hits.seeyoufarm.com/
+  - [**hits.seeyoufarm** ](https://hits.seeyoufarm.com/)
 
   - 링크 접속 후, Target url 부분의 자신의 "깃헙주소/hit-counter" 입력
   - 원하는 커스텀을 한 후, 코드 적용
@@ -48,7 +46,7 @@ tags: [github-page] # TAG names should always be lowercase
 
 - **shields.io** 와 **Simple Icons** 이용
 
-  - [shields.io]: https://shields.io/
+  - [**shields.io**](https://shields.io/)
 
   - 링크 이동 형식 예시
 
@@ -62,7 +60,7 @@ tags: [github-page] # TAG names should always be lowercase
       <img src="https://img.shields.io/badge/문자-색상코드?style=for-the-badge&logo=아이콘 이름&logoColor=black">
       ```
 
-  - [Simple Icons]: https://simpleicons.org/
+    [**Simple Icons**](https://simpleicons.org/)
 
     - 아이콘 색상코드와 아이콘 이름을 검색할 수 있는 사이트
 
@@ -72,7 +70,7 @@ tags: [github-page] # TAG names should always be lowercase
 
 - **Git-readme-stats** 이용
 
-  - [Git-readme-stats]: https://github.com/anuraghazra/github-readme-stats
+  - [**Git-readme-stats** ](https://github.com/anuraghazra/github-readme-stats)
 
   - GitHub 통계
 

@@ -18,7 +18,7 @@ tags: [react] # TAG names should always be lowercase
 - 원하는 이름으로 import 불가능
 
 ```jsx
-// Animals.jsx
+// Animals.js
 function Duck() {
   return <h1>Hi! I'm Duck!</h1>;
 }
@@ -31,8 +31,8 @@ export Duck;
 export Goose;
 
 
-// AnimalsIntro.jsx
-import { Duck } from "./Animals.jsx"
+// AnimalsIntro.js
+import { Duck } from "./Animals.js"
 ```
 
 
@@ -45,7 +45,7 @@ import { Duck } from "./Animals.jsx"
 - 원하는 이름으로 import 가능
 
 ```jsx
-// Animal.jsx
+// Animal.js
 function Duck() {
   return <h1>Hi! I'm Duck!</h1>;
 }
@@ -54,6 +54,6 @@ export default Duck;
 
 
 // AnimalIntro.jsx
-import Duck from "./Animal.jsx" // import {default as Duck} from "./Animal"
+import Duck from "./Animal.js" // import {default as Duck} from "./Animal"
 ```
 
